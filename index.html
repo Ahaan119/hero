@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="canonical" href="https://maahero.com/index.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="/Images/logo.svg" type="image/x-icon">
+    <title>My Hero</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="scriptlay">
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <div id="overlay"></div>
+            <div class="headmiddle">
+                <div class="headlogomob"><a href="https://maahero.com/index.html"><img src="/Images/logo.svg" alt="logo"><span>Modern Auto Agency</span></a></div>
+            </div>
+        </div>
+
+        <div class="tophead">
+            <div class="headfirst">
+                <a href="#defaultOpen">NEWLAUNCH</a>
+                <a href="#perfor"  onclick="document.getElementById('perfor').click();">MOTERCYCLE</a>
+                <a href="#scoote" onclick="document.getElementById('scoote').click();">SCOOTERS</a>
+            </div>
+            <div class="headmiddle">
+                <a href="https://maahero.com/index.html">
+                    <div class="headlogo"><img src="/Images/logo.svg" alt="llogo"></div>
+                    <div class="headtext"><span>MODERN AUTO AGENCY</span></div>
+                </a>
+            </div>
+            <div class="headlast">
+                <a href="https://maahero.com/pages/about.html">ABOUT</a>
+                <a href="#test">TESTRIDE</a>
+                <a href="https://maahero.com/pages/contact.html">EXCHANGE</a>
+                <a class="headphone" href="tel:+91 9431466219">
+                    <svg fill="red" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 342.514 342.514" xml:space="preserve"
+                        transform="rotate(270)matrix(1, 0, 0, 1, 0, 0)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g>
+                                <path
+                                    d="M171.254,0C76.826,0,0,76.825,0,171.26c0,94.434,76.819,171.254,171.254,171.254c94.434,0,171.26-76.82,171.26-171.254 C342.514,76.825,265.682,0,171.254,0z M241.225,137.474l-18.76,18.777c-4.383,4.377-11.444,4.377-15.816,0l-6.737-6.731 c-0.606-0.609-1.351-0.937-2.132-1.147c-6.209-4.603-14.994-4.155-20.614,1.459l-27.322,27.322 c-5.632,5.62-6.083,14.417-1.465,20.614c0.21,0.781,0.544,1.52,1.138,2.132l6.752,6.737c4.359,4.371,4.371,11.445,0,15.805 l-18.771,18.783c-4.387,4.371-11.445,4.371-15.817,0l-13.478-13.487c-16.727-16.705-16.714-43.907,0-60.621l58.925-58.919 c16.715-16.708,43.91-16.708,60.622,0l13.475,13.472C245.596,126.046,245.596,133.111,241.225,137.474z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- foltingmediaicons -->
+    <section id="floatingwidget" class="">
+        <div class="floatwid">
+            <!-- <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path
+                        d="M11.8712 25.0361C20.2759 25.0361 24.8786 18.0685 24.8786 12.0287C24.8786 11.8286 24.8786 11.6285 24.8604 11.4466C25.7518 10.8099 26.534 9.99122 27.1344 9.08161C26.3157 9.44545 25.4243 9.68195 24.5147 9.80929C25.4607 9.24534 26.1884 8.35392 26.534 7.28058C25.6426 7.80816 24.6784 8.19019 23.6233 8.39031C22.7865 7.49889 21.604 6.95312 20.2941 6.95312C17.7654 6.95312 15.7279 9.00884 15.7279 11.5194C15.7279 11.8832 15.7643 12.2289 15.8371 12.5563C12.0349 12.3562 8.66935 10.537 6.41352 7.77177C6.01329 8.44488 5.79499 9.22714 5.79499 10.064C5.79499 11.6467 6.59544 13.0475 7.83251 13.8661C7.08663 13.848 6.37714 13.6296 5.7586 13.3022C5.7586 13.3204 5.7586 13.3386 5.7586 13.3568C5.7586 15.5762 7.34132 17.4136 9.43342 17.832C9.05138 17.9412 8.65115 17.9958 8.23274 17.9958C7.94166 17.9958 7.65059 17.9594 7.3777 17.9048C7.95985 19.724 9.65172 21.052 11.6529 21.0884C10.0701 22.3255 8.10539 23.0532 5.95872 23.0532C5.59487 23.0532 5.23103 23.035 4.86719 22.9804C6.88652 24.2902 9.28788 25.0361 11.8712 25.0361Z"
+                        fill="white" />
+                </svg>
+            </span> -->
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path
+                        d="M20.3435 6.73557H23.2907V2.07838H19.6159H18.8518C18.8518 2.07838 16.0684 2.00561 14.3037 4.31602C14.3037 4.31602 13.1031 5.46212 13.0849 8.79129V12.266H8.71875V17.1961H13.0849V29.9306H18.1241V17.1961H22.472L23.0724 12.266H18.1241V8.79129C18.1423 8.40925 18.306 6.69919 20.3435 6.73557Z"
+                        fill="white" />
+                </svg>
+            </span>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path
+                        d="M20.6301 3.92969H11.3703C7.25885 3.92969 3.92969 7.25885 3.92969 11.3703V20.6301C3.92969 24.7415 7.25885 28.0707 11.3703 28.0707H20.6301C24.7415 28.0707 28.0707 24.7415 28.0707 20.6301V11.3703C28.0707 7.25885 24.7415 3.92969 20.6301 3.92969ZM25.7603 19.7387C25.7603 23.0496 23.0678 25.7421 19.7569 25.7421H12.2617C8.95072 25.7421 6.25828 23.0496 6.25828 19.7387V12.2617C6.25828 8.95072 8.95072 6.25828 12.2617 6.25828H19.7387C23.0496 6.25828 25.7421 8.95072 25.7421 12.2617V19.7387H25.7603Z"
+                        fill="white" />
+                    <path
+                        d="M16.3204 9.67969C12.8093 9.67969 9.95312 12.5177 9.95312 16.0287C9.95312 19.5398 12.7911 22.3778 16.3204 22.3778C19.8315 22.3778 22.6694 19.5216 22.6694 16.0287C22.6876 12.5359 19.8315 9.67969 16.3204 9.67969ZM16.3204 19.8673C14.2101 19.8673 12.5 18.1572 12.5 16.0469C12.5 13.9367 14.2101 12.2266 16.3204 12.2266C18.4307 12.2266 20.1407 13.9367 20.1407 16.0469C20.1589 18.1572 18.4307 19.8673 16.3204 19.8673Z"
+                        fill="white" />
+                    <path
+                        d="M23.871 9.58785C23.871 10.4793 23.1433 11.207 22.2519 11.207C21.3605 11.207 20.6328 10.4793 20.6328 9.58785C20.6328 8.69644 21.3605 7.96875 22.2519 7.96875C23.1433 7.96875 23.871 8.69644 23.871 9.58785Z"
+                        fill="white" />
+                </svg>
+            </span>
+        </div>
+    </section>
+
+    <!-- hero -->
+
+    <div class="firsthero">
+        <div class="swiper myheroSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="hero">
+                        <img src="/Images/banner 1.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero">
+                        <img src="/Images/banner 2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="motoinfo">
+            <div class="motostyle">
+
+                <div class="machinename MS">
+                    <h4>MAVRIK440<BR>ME X MACHINE</h4>
+                </div>
+                <div class="machine MS ts">
+                    <H4>TOP SPEED<br> <SPAN>150KMPH</SPAN></H4>
+                </div>
+                <div class="machine MS pow">
+                    <H4>POWER<br> <SPAN>27BHP</SPAN></H4>
+                </div>
+                <div class="machine MS tqn">
+                    <H4>TORQUE<br> <SPAN>36Nm</SPAN></H4>
+                </div>
+            </div>
+            <div class="machine_img"><img src="/Images/sound-image-desktop-001.png" alt=""></div>
+
+        </div>
+    </div>
+
+    <!-- how can we help you -->
+    <div class="helpyou page-width">
+
+        <div class="helpleft">
+            <h2 class="helphdng">HOW CAN WE HELP YOU</h2>
+            <div class="help-main-box quick-link-size6" id="quicklink">
+
+                <div class="pta">
+                    <a class="help-box" aa-data-attr="track_cta" href="#" data-toggle="modal"
+                        data-target="#requestCallBack" style="" tabindex="0" aria-hidden="true">
+                        <div class="help-icon-box">
+                            <img loading="lazy" src="/Images/service resized image.png" alt="request callback">
+                        </div>
+                        <p class="help-icon-label h4-bold-heading-std">REQUEST <br>CALLBACK</p>
+                    </a>
+                </div>
+
+
+                <div class="pta">
+
+                    <a class="help-box" aa-data-attr="track_cta" href="#test" target="_self" style="" tabindex="-1"
+                        aria-hidden="true">
+                        <div class="help-icon-box">
+                            <img loading="lazy" src="/Images/contact-us-icon.svg" alt="book-service">
+                        </div>
+                        <p class="help-icon-label h4-bold-heading-std">BOOK A SERVICE</p>
+                    </a>
+                </div>
+
+                <div class="pta">
+
+                    <a class="help-box" aa-data-attr="track_cta" href="https://maahero.com/pages/contact.html" target="_self" style="" tabindex="-1"
+                        aria-hidden="true">
+                        <div class="help-icon-box">
+                            <img loading="lazy" src="/Images/goodlife icon revised.png" alt="contact us">
+                        </div>
+                        <p class="help-icon-label h4-bold-heading-std">CONTACT US</p>
+                    </a>
+                </div>
+
+                <div class="pta">
+
+                    <a class="help-box" aa-data-attr="track_cta" href="https://maahero.com/pages/contact.html" target="_self" style="" tabindex="-1"
+                        aria-hidden="true">
+                        <div class="help-icon-box">
+                            <img loading="lazy" src="/Images/exchange_icon.svg" alt="good life">
+                        </div>
+                        <p class="help-icon-label h4-bold-heading-std">GOODLIFE</p>
+                    </a>
+                </div>
+
+                <div class="pta">
+
+                    <a class="help-box" aa-data-attr="track_cta" href="#aboutsec" target="_blank" style="" tabindex="-1"
+                        aria-hidden="true">
+                        <div class="help-icon-box">
+                            <img loading="lazy" src="/Images/tab-delear-icon.svg" alt="find a dealer">
+                        </div>
+                        <p class="help-icon-label h4-bold-heading-std">FIND A DEALER</p>
+                    </a>
+                </div>
+
+                <div class="pta">
+
+                    <a class="help-box" aa-data-attr="track_cta" href="https://maahero.com/pages/contact.html" target="_self" style="" tabindex="-1"
+                        aria-hidden="true">
+                        <div class="help-icon-box">
+                            <img loading="lazy" src="/Images/tab-request-callback-icon.svg">
+                        </div>
+                        <p class="help-icon-label h4-bold-heading-std">EXCHANGE</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <h2 class="rpos">XTREME 125R</h2>
+        <div class="helpright">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/Images/xreme front.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/Images/xtreme.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/Images/xtreme.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEW LAUNCHES -->
+    <div id="launchsec" class="newlaunches  spacetopbottom">
+        <h2>LATEST ARRIVAL</h2>
+        <div class="launchimgttl d-flex page-width">
+
+            <div class="dual_image">
+                <div class="image col-md-12 col-xl-5">
+                    <div class="image-container">
+                        <img src="/Images/deskfront.png" alt="KARIZMA XMR" class="image">
+                        <img src="/Images/karizma hover.jpg" alt="KARIZMA XMR" class="image hover-image">
+                        <span  class="img-text" >
+                            <h4 class="h3-bold-heading-std">KARIZMA XMR</h4>
+                        </span>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="/Images/Xtreme125r-onhoverweb.jpg" alt="XTREME 125R" class="image">
+                        <img src="/Images/xtreme hover.jpg" alt="XTREME 125R" class="image hover-image">
+                        <a href="/" target="_self" class="img-text" aa-data-attr="track_cta">
+                            <h4 class="h3-bold-heading-std">XTREME 125R</h4>
+                        </a>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="/Images/Maverick_web_1.png" alt="MAVERICK" class="image">
+                        <img src="/Images/mavrick hover.jpg" alt="MAVERICK" class="image hover-image">
+                        <a href="#" target="_self" class="img-text" aa-data-attr="track_cta">
+                            <h4 class="h3-bold-heading-std">MAVERICK</h4>
+                        </a>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="/Images/01-Harley_Davidson_thumbnail.png" alt="MAVERICK" class="image">
+                        <img src="/Images/harley hover.jpg" alt="MAVERICK" class="image hover-image">
+                        <a href="#" target="_self" class="img-text" aa-data-attr="track_cta">
+                            <h4 class="h3-bold-heading-std">HARLEY DAVIDSON</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- EXPLORE PRODUCTS -->
+    <div class="tabtexthero page-width spacetopbottom">
+        <h2>EXPLORE OUR PRODUCTS</h2>
+        <P>Check out our range of motercycles and scooters with exciting features and latest technolgy</P>
+        <div class="tabhero">
+
+            <div class="tab">
+                <button  class="tablinks" onclick="openCity(event, 'newlaunches')" id="defaultOpen">NEW LAUNCHES</button>
+                <button id="prac" class="tablinks" onclick="openCity(event, 'practical')">PRACTICAL</button>
+                <button id="execut" class="tablinks" onclick="openCity(event, 'executive')">EXECUTIVE</button>
+                <button id="perfor" class="tablinks" onclick="openCity(event, 'performance')">PERFORMANCE</button>
+                <button id="scoote" class="tablinks" onclick="openCity(event, 'scooters')">SCOOTERS</button>
+            </div>
+
+            <div id="newlaunches" class="tabcontent">
+                <div class="biketab">
+                    <div class="herobikeimg"><img src="/Images/New_Launches_Maverick_web.png" alt="bike_images"
+                            loading="lazy">
+                        <p>Maverick</p>
+                    </div>
+                    <div class="herobikeimg scootransl"><img src="/Images/newlaunches_Xtreme-125R-Blue_web.png" alt="bike_images"
+                            loading="lazy">
+                        <p>Xtreme-125R</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="practical" class="tabcontent">
+                <div class="biketab">
+                    <div class="herobikeimg"><img src="/Images/newlaunches_HF-100-1 (1).png" alt="bike_images"
+                            loading="lazy">
+                        <p>SPLENDOR+</p>
+                    </div>
+                    <div class="herobikeimg"><img src="/Images/newlaunches_HF-Deluxe (1).png" alt="bike_images"
+                            loading="lazy">
+                        <p>SPLENDOR+ XTEC</p>
+                    </div>
+
+                    <div class="herobikeimg"><img src="/Images/newlaunches_splendor-plus-xtec-2-explore-web.png"
+                            alt="bike_images" loading="lazy">
+                        <p>SPLENDOR+ XTEC 2.0</p>
+                    </div>
+
+
+                    <div class="herobikeimg scootransl"><img src="/Images/new-launch-Splendor+ (1).png" alt="bike_images"
+                            loading="lazy">
+                        <p>HF DELUXE</p>
+                    </div>
+                    <div class="herobikeimg scootransl"><img src="/Images/newlaunch_splendor-Xtec (1).png" alt="bike_images"
+                            loading="lazy">
+                        <p>HF 100</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="executive" class="tabcontent">
+                <div class="biketab">
+                    <div class="herobikeimg scootransl"><img src="/Images/executive_glamour-new-website.png" alt="bike_images"
+                            loading="lazy">
+                        <p>GLAMOUR</p>
+                    </div>
+                    <div class="herobikeimg scootransl"><img src="/Images/executive_passion-xtec-web.png" alt="bike_images"
+                            loading="lazy">
+                        <p>PASSION XTEC</p>
+                    </div>
+                    <div class="herobikeimg scootransl"><img src="/Images/executive_super_splendor_xtec_desktop.png"
+                            alt="bike_images" loading="lazy">
+                        <p>SUPER SPLENDOR XTEC</p>
+                    </div>
+                    <div class="herobikeimg"><img src="/Images/executive_404 -  190-179 px.png" alt="bike_images"
+                            loading="lazy">
+                        <p>PASSION+</p>
+                    </div>
+                    <div class="herobikeimg"><img src="/Images/executive_passion_plus_desktop.png" alt="bike_images"
+                            loading="lazy">
+                        <p>SUPER SPLENDOR</p>
+                    </div>
+                    <div class="herobikeimg"><img src="/Images/executive_Updated-Glamour XTec (1).png" alt="bike_images"
+                            loading="lazy">
+                        <p>GLAMOUR XTEC</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="performance" class="tabcontent">
+                <div class="biketab">
+                    <div class="herobikeimg"><img src="/Images/performance_Xtreme 160R.png" alt="bike_images"
+                            loading="lazy">
+                        <p>XTREME 160R 4V</p>
+                    </div>
+                    <div class="herobikeimg"><img src="/Images/Xtreme160R4V_Performance_Desktop (1).png"
+                            alt="bike_images" loading="lazy">
+                        <p>XTREME 160R</p>
+                    </div>
+                    <div class="herobikeimg"><img src="/Images/performnce_Xtreme-200-SExploreourproductWeb.png"
+                            alt="bike_images" loading="lazy">
+                        <p>XTREME 200S 4V</p>
+                    </div>
+                    <div class="herobikeimg scootransl"><img src="/Images/Xtreme-125R-ExploreourproductWebPerformance.png"
+                            alt="bike_images" loading="lazy">
+                        <p>XTREME 125R</p>
+                    </div>
+                    <div class="herobikeimg scootransl"><img src="/Images/home_page_performance_1.png" alt="bike_images"
+                            loading="lazy">
+                        <p>XPULSE 200 4V</p>
+                    </div>
+                    <div class="herobikeimg scootransl"><img src="/Images/home_page_performance_desktop.png" alt="bike_images"
+                            loading="lazy">
+                        <p>XPULSE 200T 4V</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="scooters" class="tabcontent">
+                <div class="biketab">
+                    <div class="herobikeimg scootransl"><img src="/Images/scooter-destini-prime-web.png" alt="bike_images"
+                            loading="lazy">
+                        <p>DESTINI PRIME</p>
+                    </div>
+                    <div class="herobikeimg"><img src="/Images/scooter_desktop-explore-products-destini-1.png"
+                            alt="bike_images" loading="lazy">
+                        <p>PLEASURE+ XTEC 18</p>
+                    </div>
+                    <div class="herobikeimg"><img src="/Images/scooter_Xoom_-_332-311-px.png" alt="bike_images"
+                            loading="lazy">
+                        <p>XOOM</p>
+                    </div>
+                    <div class="herobikeimg scootransl"><img src="/Images/p18-scooters-section.png" alt="bike_images"
+                            loading="lazy">
+                        <P>DESTINI 125 XTECH</P>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- form -->
+
+    <div class="herofield" id="test">
+        <div class="contactform page-width inrspc">
+            <h2>BOOK A TEST RIDE NOW</h2>
+            <p>Take A Hero Ride And Experience The Thrill</p>
+            <div class="container">
+                <form action="#">
+                    <div class="user__details">
+                        <div class="input__box">
+                            <!-- <span class="details">Full Name</span> -->
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="input__box">
+                            <!-- <span class="details">Phone Number</span> -->
+                            <input type="tel" placeholder="Mobile Number" required>
+                        </div>
+
+                        <div class="input__box">
+                            <!-- <span class="details">Full Name</span> -->
+                            <select class="Vehicle-dropdwown" aria-label="Select Vehicle" required>
+                                <option value="" disabled selected>Select a Vehicle</option>
+                                <option value="Vehicle1">Xtreme 125R</option>
+                                <option value="Vehicle2">Xtreme 160R</option>
+                                <option value="Vehicle">
+                                    XPulse 200T 4V
+                                </option>
+                                <option value="Vehicle">
+                                    Xtreme 160R 4V
+
+                                </option>
+                                <option value="Vehicle">
+                                    Xtreme 200S 4v
+
+                                </option>
+                                <option value="Vehicle">
+                                    Xtreme 200S
+
+                                </option>
+                                <option value="Vehicle">
+                                    XPulse 200 4V
+
+                                </option>
+                                <option value="Vehicle">
+                                    Glamour XTEC
+
+                                </option>
+                                <option value="Vehicle">
+                                    Passion XTEC
+
+                                </option>
+                                <option value="Vehicle">
+                                    Super Splendor
+
+                                </option>
+                                <option value="Vehicle">
+                                    Glamour
+
+                                </option>
+                                <option value="Vehicle">
+                                    Glamour Canvas
+
+                                </option>
+                                <option value="Vehicle">
+                                    Passion+
+
+                                </option>
+                                <option value="Vehicle">
+                                    Splendor+
+
+                                </option>
+                                <option value="Vehicle">
+                                    Splendor+ XTEC
+
+                                </option>
+                                <option value="Vehicle">
+                                    HF Deluxe
+
+                                </option>
+                                <option value="Vehicle">
+                                    HF 100
+
+                                </option>
+                                <option value="Vehicle">
+                                    XOOM
+
+                                </option>
+                                <option value="Vehicle">
+                                    Pleasure+ XTEC
+
+                                </option>
+                                <option value="Vehicle">
+                                    Destini 125 XTEC
+
+                                </option>
+                                <option value="Vehicle">
+                                    Destini Prime
+
+                                </option>
+                                <option value="Vehicle">
+                                    Maestro Edge 125
+
+                                </option>
+                                <option value="Vehicle">
+                                    Maestro Edge 110
+
+                                </option>
+                                <option value="Vehicle">
+                                    Super Splendor XTEC
+
+                                </option>
+                                </select>
+                        </div>
+
+                        <div class="input__box">
+                            <!-- <span class="details">Location</span> -->
+                            <select class="location-dropdown" aria-label="Select location" required>
+                                <option value="" disabled selected>Select a location</option>
+                                <option value="location1">Modern Hero Bike Dealer, Lal Bazar,Bettiah-845,Bihar, India
+                                </option>
+                                <option value="location2">Ground Floor, NH 727 Mansa Tola Bettiah - 845438</option>
+                                <!-- Add more locations as needed -->
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="button">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- NEW LAUNCHES -->
+    <div class="beahero  spacetopbottom">
+        <h2>BE A HERO WITH A HERO</h2>
+        <p class="beaherop">Hero Means Passion,Passion for Excellence,Passion For Great Rides And We Always Strive to
+            give you the best.
+        </p>
+        <div class="launchimgttl d-flex page-width">
+
+            <div class="tileteaser image col-md-12 col-xl-5">
+
+                <div class="tile-teaser " style="background-image: url(/Images/hero14.png);height:406px;">
+                    <a href="#" target="_self" class="img-text " aa-data-attr="track_cta">
+                        <h4 class="h3-bold-heading-std">GOODLIFE</h4>
+                        <div class="d-flex justify-content-between launchpara">
+                            <p class="launchparap">Specialised Loyalty Program</p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="tileteaser image col-md-12 col-xl-5">
+
+                <div class="tile-teaser " style="background-image: url(/Images/hero16.png);height:406px;">
+                    <a href="#" target="_self" class="img-text " aa-data-attr="track_cta">
+                        <h4 class="h3-bold-heading-std">ACCESSORIES</h4>
+                        <div class="d-flex justify-content-between launchpara">
+                            <p class="launchparap">Ride your style</p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="tileteaser image col-md-12 col-xl-5">
+
+                <div class="tile-teaser " style="background-image: url(/Images/hero15.png);height:406px;">
+                    <a href="#" target="_self" class="img-text " aa-data-attr="track_cta">
+                        <h4 class="h3-bold-heading-std">GENUIEN PARTS</h4>
+                        <div class="d-flex justify-content-between launchpara">
+                            <p class="launchparap">Be Smart. Buy Genuine</p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="tileteaser image col-md-12 col-xl-5">
+
+                <div class="tile-teaser "
+                    style="background-image: url(/Images/hero17.png);height:406px;">
+                    <a href="#" target="_self" class="img-text " aa-data-attr="track_cta">
+                        <h4 class="h3-bold-heading-std">JOY RIDE PROGRAM</h4>
+                        <div class="d-flex justify-content-between launchpara">
+                            <p class="launchparap">Experience The Care</p>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Dealership -->
+
+    <div class="dealership">
+        <div class="dealcon page-width ">
+
+            <div class="dealbike inrspc">
+                <div class="ttltxt">
+                    <h1>#1</h1>
+                    <h3>TWO WHEELER<br> DELARSHIP IN<br> BIHAR</h3>
+                    <P>We are empowering millions around the global through our portfolio of innovation and sustainale
+                        product.</P><br>
+                    <p>powered by technology driven excellence, <br> we are shaping the future of mobility.</p>
+                </div>
+                <div class="motoimg">
+                    <img src="/Images/pngwing.com.png" alt="red bike" loading="lazy">
+                </div>
+            </div>
+
+            <div class="dealnumber inrspc">
+                <div class="gridlayout">
+
+                    <div class="gridtop">
+                        <div class="rollnumber bordside">
+                            <span class="stylmile">47+</span>
+                            <span class="rolltxt">COUNTRIES <br> PRESENCE</span>
+                        </div>
+                        <div class="rollnumber bordside">
+                            <span class="stylmile">40</span>
+                            <span class="rolltxt">YEARS OF <br> EXCELLENT SERVICE</span>
+                        </div>
+                    </div>
+
+                    <div class="gridbtm">
+                        <div class="rollnumber">
+                            <span class="stylmile">115 MN</span>
+                            <span class="rolltxt">HAPPY <br> COSTUMER</span>
+                        </div>
+                        <div class="rollnumber">
+                            <span class="stylmile">9000+</span>
+                            <span class="rolltxt">CUSTOMER TOUCH<br>POINTS WORLDWIDE</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+
+    <div class="tabtexthero page-width spacetopbottom" id="aboutsec">
+        <h2>EXPLORE OUR PRODUCTS</h2>
+        <P>Check out our range of motercycles and scooters with exciting features and latest technolgy</P>
+        <div class="tabhero">
+
+            <div class="tabbtm">
+                <button class="tablinksbtm" onclick="openCitybtm(event, 'about')" id="defaultOpen2">ABOUT</button>
+                <button class="tablinksbtm" onclick="openCitybtm(event, 'location')">DELARSHIP LOCATION</button>
+                <button class="tablinksbtm" onclick="openCitybtm(event, 'carrer')">CAREERS</button>
+                <button class="tablinksbtm">SUSTAINABLITY</button>
+                <button class="tablinksbtm">CSR</button>
+            </div>
+
+            <div id="about" class="tabcontentbtm">
+                <div class="abouttabcon">
+                    <div class="abouttxt">
+                        <h3>Modern Auto Agency</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dolore in ducimus pariatur
+                            id officiis, tempore cum eaque! Ab et quam aspernatur deserunt voluptas modi eligendi atque.
+                            Cupiditate cumque possimus obcaecati debitis amet molestiae perspiciatis doloremque!</p>
+                    </div>
+                    <div class="aboutbikeimg"><img src="/Images/WhatsApp Image 2024-06-17 at 15.04.55_35d4304b.jpg"
+                            alt="bike_images" loading="lazy"></div>
+
+                </div>
+            </div>
+
+            <div id="location" class="tabcontentbtm">
+                <div class="abouttabcon">
+                    <div class="abouttxt">
+                        <h3>Modern Auto Agency</h3>
+                        <p><span><svg fill="#ff0000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 395.71 395.71"
+                                    xml:space="preserve" stroke="#ff0000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                    </g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g>
+                                            <path
+                                                d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738 c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388 C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191 c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span><span> Ground Floor, NH 727 Mansa Tola Bettiah - 845438 </span></p>
+                        <br>
+                        <p><span><svg fill="#ff0000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 395.71 395.71"
+                                    xml:space="preserve" stroke="#ff0000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                    </g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g>
+                                            <path
+                                                d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738 c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388 C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191 c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg></span> <span> Modern Hero Bike Dealer, Lal Bazar,Bettiah-845,Bihar, India
+                            </span></p>
+                    </div>
+                    <div class="aboutbikeimg">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14245.108449816322!2d84.5065072!3d26.7993037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39936ebb75ec3af5%3A0x75b31678e40cc9d6!2sModern%20Automotive%20-%20Heromotocorp!5e0!3m2!1sen!2sin!4v1719479762624!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="carrer" class="tabcontentbtm">
+                <div class="abouttabcon">
+                    <div class="abouttxt">
+                        <h3>Modern Auto Agency</h3>
+                        <p>Email: maabth@gmail.com</p>
+                    </div>
+                    <div class="aboutbikeimg"><img src="/Images/WhatsApp Image 2024-06-17 at 15.04.55_35d4304b.jpg"
+                            alt="bike_images" loading="lazy"></div>
+
+                </div>
+            </div>
+
+            <div id="sustainability" class="tabcontentbtm">
+                <div class="abouttabcon">
+                    <div class="abouttxt">
+                        <h3>Modern Auto Agency</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dolore in ducimus pariatur
+                            id officiis, tempore cum eaque! Ab et quam aspernatur deserunt voluptas modi eligendi atque.
+                            Cupiditate cumque possimus obcaecati debitis amet molestiae perspiciatis doloremque!</p>
+                    </div>
+                    <div class="aboutbikeimg"><img src="/Images/WhatsApp Image 2024-06-17 at 15.04.55_35d4304b.jpg"
+                            alt="bike_images" loading="lazy"></div>
+
+                </div>
+            </div>
+
+            <div id="csr" class="tabcontentbtm">
+                <div class="abouttabcon">
+                    <div class="abouttxt">
+                        <h3>Modern Auto Agency</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dolore in ducimus pariatur
+                            id officiis, tempore cum eaque! Ab et quam aspernatur deserunt voluptas modi eligendi atque.
+                            Cupiditate cumque possimus obcaecati debitis amet molestiae perspiciatis doloremque!</p>
+                    </div>
+                    <div class="aboutbikeimg"><img src="/Images/WhatsApp Image 2024-06-17 at 15.04.55_35d4304b.jpg"
+                            alt="bike_images" loading="lazy"></div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footbottom">
+            <div class="footmen ">
+                <div class="page-width foone">
+                    <span><a href="https://maahero.com/index.html">HOME</a></span>
+                    <span><a href="https://maahero.com/pages/about.html">ABOUT</a></span>
+                    <span><a href="https://maahero.com/pages/contact.html">CONTACT</a></span>
+                </div>
+            </div>
+            <div class="footmen  footmenborsty">
+                <div class="page-width fotwo">
+                    <div class="centerinfo address"><span>Ground Floor, NH 727 Mansa Tola Bettiah - 845438
+                        </span>
+                        <span><a href="mailto: maabth@gmail.com">Email:maabth@gmail.com</a></span>
+                        <span>Modern Hero Bike Dealer, Lal Bazar,Bettiah-845,Bihar, India </span>
+                    </div>
+                    <div class="centerinfo"><span>Contact Person - Raj<br>9431466219 / 9771641111</span></div>
+                    <div class="centerinfo">
+                        <span>MODERN AUTO AGENCY <br> GSTN - 10AAEFM6429M1Z9</span>
+                        <div class="sociallink">
+                            <!-- <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                    fill="none">
+                                    <path
+                                        d="M11.8712 25.0361C20.2759 25.0361 24.8786 18.0685 24.8786 12.0287C24.8786 11.8286 24.8786 11.6285 24.8604 11.4466C25.7518 10.8099 26.534 9.99122 27.1344 9.08161C26.3157 9.44545 25.4243 9.68195 24.5147 9.80929C25.4607 9.24534 26.1884 8.35392 26.534 7.28058C25.6426 7.80816 24.6784 8.19019 23.6233 8.39031C22.7865 7.49889 21.604 6.95312 20.2941 6.95312C17.7654 6.95312 15.7279 9.00884 15.7279 11.5194C15.7279 11.8832 15.7643 12.2289 15.8371 12.5563C12.0349 12.3562 8.66935 10.537 6.41352 7.77177C6.01329 8.44488 5.79499 9.22714 5.79499 10.064C5.79499 11.6467 6.59544 13.0475 7.83251 13.8661C7.08663 13.848 6.37714 13.6296 5.7586 13.3022C5.7586 13.3204 5.7586 13.3386 5.7586 13.3568C5.7586 15.5762 7.34132 17.4136 9.43342 17.832C9.05138 17.9412 8.65115 17.9958 8.23274 17.9958C7.94166 17.9958 7.65059 17.9594 7.3777 17.9048C7.95985 19.724 9.65172 21.052 11.6529 21.0884C10.0701 22.3255 8.10539 23.0532 5.95872 23.0532C5.59487 23.0532 5.23103 23.035 4.86719 22.9804C6.88652 24.2902 9.28788 25.0361 11.8712 25.0361Z"
+                                        fill="white" />
+                                </svg>
+                            </span> -->
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                    fill="none">
+                                    <path
+                                        d="M20.3435 6.73557H23.2907V2.07838H19.6159H18.8518C18.8518 2.07838 16.0684 2.00561 14.3037 4.31602C14.3037 4.31602 13.1031 5.46212 13.0849 8.79129V12.266H8.71875V17.1961H13.0849V29.9306H18.1241V17.1961H22.472L23.0724 12.266H18.1241V8.79129C18.1423 8.40925 18.306 6.69919 20.3435 6.73557Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                    fill="none">
+                                    <path
+                                        d="M20.6301 3.92969H11.3703C7.25885 3.92969 3.92969 7.25885 3.92969 11.3703V20.6301C3.92969 24.7415 7.25885 28.0707 11.3703 28.0707H20.6301C24.7415 28.0707 28.0707 24.7415 28.0707 20.6301V11.3703C28.0707 7.25885 24.7415 3.92969 20.6301 3.92969ZM25.7603 19.7387C25.7603 23.0496 23.0678 25.7421 19.7569 25.7421H12.2617C8.95072 25.7421 6.25828 23.0496 6.25828 19.7387V12.2617C6.25828 8.95072 8.95072 6.25828 12.2617 6.25828H19.7387C23.0496 6.25828 25.7421 8.95072 25.7421 12.2617V19.7387H25.7603Z"
+                                        fill="white" />
+                                    <path
+                                        d="M16.3204 9.67969C12.8093 9.67969 9.95312 12.5177 9.95312 16.0287C9.95312 19.5398 12.7911 22.3778 16.3204 22.3778C19.8315 22.3778 22.6694 19.5216 22.6694 16.0287C22.6876 12.5359 19.8315 9.67969 16.3204 9.67969ZM16.3204 19.8673C14.2101 19.8673 12.5 18.1572 12.5 16.0469C12.5 13.9367 14.2101 12.2266 16.3204 12.2266C18.4307 12.2266 20.1407 13.9367 20.1407 16.0469C20.1589 18.1572 18.4307 19.8673 16.3204 19.8673Z"
+                                        fill="white" />
+                                    <path
+                                        d="M23.871 9.58785C23.871 10.4793 23.1433 11.207 22.2519 11.207C21.3605 11.207 20.6328 10.4793 20.6328 9.58785C20.6328 8.69644 21.3605 7.96875 22.2519 7.96875C23.1433 7.96875 23.871 8.69644 23.871 9.58785Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footmen ">
+                <div class="page-width fothre">
+                    <!-- <div class="botfoot">
+                        <span>Privacy Policy</span><span>Desclaimer</span><span>Terms of Use</span><span>Rules &
+                            Regulations</span><span>Data Colletion Contract</span><span>Sitemap</span>
+                    </div> -->
+                    <div class="lastspan"><span class="righttxt">Cpoyright Modern Auto Agency 2024. All Right
+                            Reserved</span></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        function openCitybtm(evt, cityName) {
+            var i, tabcontentbtm, tablinksbtm;
+            tabcontentbtm = document.getElementsByClassName("tabcontentbtm");
+            for (i = 0; i < tabcontentbtm.length; i++) {
+                tabcontentbtm[i].style.display = "none";
+            }
+            tablinksbtm = document.getElementsByClassName("tablinksbtm");
+            for (i = 0; i < tablinksbtm.length; i++) {
+                tablinksbtm[i].className = tablinksbtm[i].className.replace(" activebtm", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " activebtm";
+        }
+        document.getElementById("defaultOpen").click();
+        document.getElementById("defaultOpen2").click();
+
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+    <script>
+        var heroswiper = new Swiper(".myheroSwiper", {
+            direction: "vertical",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + '0' + (index + 1) + "</span>";
+                },
+                autoplay: {
+                    delay: 2500,
+                },
+            },
+        });
+    </script>
+
+
+    <script>
+        function myFunction() {
+            var x = document.querySelector(".tophead");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+                document.getElementById("overlay").style.display = "none";
+            } else {
+                x.style.display = "flex";
+                document.getElementById("overlay").style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

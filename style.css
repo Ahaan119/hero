@@ -1,0 +1,1739 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'tstar-heavy', sans-serif;
+}
+
+@font-face {
+    font-family: 'tstar-heavy';
+    src: url('/font/TStarProHeavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'tstar-medium';
+    src: url('/font/TStarProMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* @keyframes textclip {
+0% {
+    background-position: 200% center;
+}
+
+100% {
+    background-position: 0 center;
+}
+}
+
+header a:first-child{
+    background: linear-gradient(to right, red 5%, black 50%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+} */
+
+#floatingwidget {
+    width: fit-content;
+    position: fixed;
+    top: 33%;
+    left: 0%;
+    z-index: 9;
+}
+
+.floatwid a svg {
+    width: 49px;
+    height: 49px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.floatwid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: #000;
+    padding: 19px 23px;
+}
+
+/* .floatwid:hover {
+    background-color: #f7fafa;
+} */
+
+.floatwid:focus {
+    border-color: #008296;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline: 0;
+}
+
+.headphone {
+    width: 29px;
+}
+
+div,
+section,
+span,
+ul,
+li,
+a,
+header {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: inherit;
+}
+
+h1 {
+    font-size: 4.26vw;
+}
+
+h2 {
+    font-family: 'tstar-heavy';
+    FONT-STYLE: italic;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    color: #303030;
+}
+
+h3 {
+    font-family: 'tstar-heavy';
+    font-size: 1.765vw;
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-bottom: 20px;
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+}
+
+p {
+    font-family: 'tstar-medium';
+    font-size: 18px !important;
+    line-height: 24px !important;
+    color: #303030;
+    text-align: center;
+}
+
+span {
+    font-size: 1.029vw;
+
+}
+
+a {
+    font-family: 'tstar-medium';
+    text-decoration: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+/* .swiper-button-next:after, .swiper-button-prev:after{
+    color: #fff;
+} */
+
+.firsthero .swiper {
+    height: 656px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.helpright .swiper-slide img {
+    object-fit: contain;
+}
+
+.swiper-pagination-bullet {
+    font-size: 28px;
+    color: #FFF;
+    width: 100% !important;
+    height: auto !important;
+    background: transparent !important;
+    margin: 16px 0;
+}
+
+.swiper-pagination-bullet::after {
+    content: " ";
+    width: inherit;
+    height: 2px;
+    display: block;
+    background: #fff;
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    font-size: 33PX;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.headlogo {
+    WIDTH: 136px;
+}
+
+/* hero */
+
+.firsthero {
+    position: relative;
+    background: #000;
+}
+
+#media span{
+        width: -webkit-fill-available;
+}
+
+.MS h4 {
+    font-size: 13PX !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 0 !important;
+}
+
+.headfirst,
+.headlast {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.MS span {
+    font-size: 19PX;
+    font-weight: 600;
+    text-align: center;
+}
+
+header {
+    background-color: #000;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.tophead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 32px 32px 32px;
+}
+
+.motoinfo {
+    width: 100%;
+    display: none;
+    align-items: flex-end;
+    justify-content: flex-end;
+    POSITION: absolute;
+    BOTTOM: 1px;
+    Z-INDEX: 3;
+}
+
+.ts {
+    /* margin: 39px 0 !important; */
+    /* padding: 0 39px !important; */
+    border-right: 1px solid #fff;
+}
+
+.pow {
+    margin: 19px 0 !important;
+    /* padding: 13px 39px !important; */
+    border-right: 1px solid #fff;
+}
+
+
+.tqn {
+    /* padding: 13px 39px !important;   */
+}
+
+.machinename {
+    background-color: #303030;
+    padding: 39px;
+    color: #fff;
+
+}
+
+.machine_img {
+    width: 270px;
+    background: #737171;
+}
+
+.machine {
+    /* margin: 39px; */
+    color: #fff;
+    height: 70px;
+    padding: 0 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.motostyle {
+    display: flex;
+    align-items: center;
+    background: #4f4e4e;
+    justify-content: flex-end;
+    width: max-content;
+    height: fit-content;
+}
+
+.spacetopbottommar {
+    margin-bottom: 60px;
+}
+
+.page-width {
+    max-width: 1236px;
+    width: 100%;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tab,
+.tabbtm {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    gap: 23px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.tab button,
+.tabbtm button {
+    background-color: inherit;
+    float: left;
+    font-family: 'tstar-medium';
+    border: none;
+    text-transform: uppercase;
+    color: #303030;
+    padding: 0 6px 0 6px;
+    font-size: 24px;
+    white-space: nowrap;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button.active {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.tabbtm button.activebtm,
+.tabbtm button.activecon {
+    color: red;
+    font-weight: 600;
+    border-bottom: 2px solid red;
+}
+
+.tabcontent,
+.tabcontentbm {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.tabcontent,
+.tabcontentbtm {
+    animation: fadeEffect 1s;
+    padding-top: 73px;
+}
+
+.tabtexthero p {
+    margin-bottom: 43px;
+}
+
+.biketab {
+    display: flex;
+}
+
+.tabtexthero h2,
+.tabtexthero p {
+    text-align: center;
+}
+
+.tabtexthero h2 {
+    margin-bottom: 13px;
+}
+
+.tabtexthero p {
+    margin-bottom: 53px;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.tile-teaser {
+    /* border-radius: 10px; */
+    background-size: cover;
+    color: #fff;
+}
+
+.tile-teaser .img-text {
+    width: 100%;
+    padding: 10px 20px 20px 25px;
+    cursor: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.tile-teaser .img-text::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 96px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.898958) 23.23%, #000 100%);
+    opacity: .5;
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    /* Adjust the width as needed */
+    height: 200px;
+    /* Adjust the height as needed */
+}
+
+.image {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s, transform 0.5s;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hover-image {
+    opacity: 0;
+    transform: translateX(0);
+}
+
+.dual_image .image-container:hover .hover-image {
+    opacity: 1;
+    transform: translateX(20px);
+}
+
+.dual_image .image-container:hover .image:not(.hover-image) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.dual_image .img-text::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 96px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.898958) 23.23%, #000 100%);
+    opacity: .5;
+}
+
+.dual_image .image {
+    display: flex;
+    width: 100%;
+    /* height: 406px; */
+}
+
+.dual_image .image-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* Keep the height consistent */
+    overflow: hidden;
+    /* Hide overflow to ensure images don't go outside the container */
+}
+
+.dual_image .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.dual_image .image-container .hover-image {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.dual_image .image-container:hover .hover-image {
+    opacity: 1;
+    transform: translateX(0);
+    /* Ensure hover image moves into view */
+}
+
+.dual_image .image-container:hover img:not(.hover-image) {
+    opacity: 0;
+    transform: translateX(-100%);
+    /* Move the original image completely out of view */
+}
+
+.dual_image .img-text {
+    position: relative;
+    width: 100%;
+    cursor: unset;
+    height: 100%;
+    z-index: 1;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0;
+}
+
+.dual_image h4 {
+    margin: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.dual_image {
+    width: 100%;
+}
+
+.h3-bold-heading-std {
+    color: #fff;
+}
+
+.launchimgttl .h3-bold-heading-std {
+    line-height: 0.2px !important;
+}
+
+.dual_image .h3-bold-heading-std {
+    line-height: 1.2 !important;
+}
+
+.launchimgttl.d-flex {
+    display: flex;
+    width: 100%;
+    /* gap: 17px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.newlaunches {
+    background-image: url('/Images/tyremarks.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+}
+
+.spacetopbottom {
+    padding-bottom: 120px;
+}
+
+.tileteaser {
+    width: 333px;
+}
+
+.newlaunches h2 {
+    margin-bottom: 43px;
+}
+
+.launchparap {
+    text-align: left;
+    color: #fff;
+}
+
+/* form */
+
+.inrspc {
+    padding: 80px 0;
+}
+
+
+.herofield {
+    background: red;
+    margin-bottom: 120px;
+}
+
+/* container and form */
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before {
+    content: "";
+    position: absolute;
+    height: 3.5px;
+    width: 30px;
+    background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
+    left: 0;
+    bottom: 0;
+}
+
+.container form .user__details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0 12px 0;
+}
+
+/* inside the form user details */
+form .user__details .input__box {
+    width: calc(100% / 3 - 20px);
+    margin-bottom: 55px;
+}
+
+.user__details .input__box .details {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.user__details .input__box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    transition: all 0.3s ease;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+/* submit button */
+form .button {
+    height: 45px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+form .button input {
+    border-radius: 4px;
+    border: 0;
+    color: #ea0000;
+    background-color: #fff;
+    font-size: 24px;
+    width: 200px;
+    text-transform: uppercase;
+}
+
+
+/* select::after{
+    content: url("/Images/dropdown-icon-select.svg");
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  z-index: 1;
+  pointer-events: none;
+} */
+
+/* form .button input:hover {
+    background: black;
+    color: #fff;
+} */
+
+.input__box select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+
+.input__box select:invalid {
+    color: gray;
+    /* Show placeholder text in gray color */
+}
+
+.input__box select option[value=""][disabled] {
+    display: none;
+    /* Hide the empty option in the dropdown */
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1;
+    /* Firefox */
+}
+
+::-ms-input-placeholder {
+    /* Edge 12 -18 */
+    color: #fff;
+}
+
+
+.contactform h2,
+.contactform p {
+    color: #fff;
+}
+
+.contactform h2 {
+    margin-bottom: 13px;
+}
+
+.contactform p {
+    margin-bottom: 53px;
+}
+
+.headlogomob,
+.icon {
+    display: none;
+}
+
+@media only screen and (max-width: 584px) {
+    .tophead {
+        display: none;
+        z-index: 6;
+
+        position: absolute;
+        top: 6%;
+        background: #000;
+        width: 100%;
+        padding: 32px;
+    }
+
+    .tophead,
+    .headfirst,
+    .headlast {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .icon,
+    .headlogomob {
+        display: block;
+    }
+
+    .headlogo {
+        display: none;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    form .user__details .input__box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    form .gender__details .category {
+        width: 100%;
+    }
+
+    .user__details::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+/* be a hero */
+
+.beahero h2 {
+    margin-bottom: 13px;
+
+}
+
+.beaherop {
+    margin-bottom: 53px;
+}
+
+/* about */
+.abouttabcon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abouttxt,
+.aboutbikeimg {
+    width: 50%;
+}
+
+.abouttxt p {
+    text-align: left;
+}
+
+.abouttxt h3 {
+    color: red;
+    font-size: 32px;
+}
+
+#about,
+#media,
+#showroom {
+    padding-top: 53px;
+}
+
+/* dealership */
+
+.dealership {
+    background: #d9d9d9;
+    margin-bottom: 120px;
+}
+
+
+.dealcon {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.stylmile {
+    font-family: 'tstar-heavy';
+    font-size: 49px;
+    font-weight: 900;
+    color: red;
+}
+
+.bordside {
+    border-right: 1px solid black;
+}
+
+.gridlayout {
+    display: flex;
+    gap: 23px;
+    padding-left: 89px;
+}
+
+.gridtop,
+.gridbtm {
+    display: flex;
+    flex-direction: column;
+    gap: 93px;
+}
+
+.rollnumber {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 23px;
+}
+
+.rolltxt {
+    font-size: 18px;
+    font-weight: 400;
+    color: #303030;
+    text-align: center;
+}
+
+.motoimg {
+    width: 286px;
+    position: absolute;
+    top: 46px;
+    right: -142px;
+}
+
+.ttltxt p {
+    text-align: left;
+}
+
+.dealbike {
+    width: 50%;
+    background: #fff;
+    padding-left: 36px;
+    padding-right: 136px;
+    position: relative;
+}
+
+.dealnumber {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.ttltxt h3 {
+    font-size: 48px;
+    margin-bottom: 36px;
+    font-style: italic;
+    margin-top: 16px;
+}
+
+.ttltxt h1 {
+    color: red;
+    font-size: 93px;
+}
+
+/* how can we help you */
+
+
+.helpright {
+    width: 40%;
+}
+
+.helpleft {
+    width: 60%;
+}
+
+.help-main-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.help-box {
+    /* width: auto; */
+    margin-bottom: 58px;
+    margin-right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pta {
+    width: 30%;
+}
+
+.help-icon-box {
+    width: max-content;
+    height: auto;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #dddcdc;
+    box-shadow: 0 8px 24px #dddcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.help-box p {
+    margin-top: 18px;
+    text-align: center;
+    width: fit-content;
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+}
+
+.helpright {
+    background-image: url('/Images/bike-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+
+.helpyou {
+    display: flex;
+    position: relative;
+}
+
+.helphdng {
+    text-align: left;
+    margin: 76px 0;
+}
+
+.rpos {
+    position: absolute;
+    right: 93px;
+    bottom: 76px;
+    color: #fff;
+    font-size: 36px;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000 !important;
+}
+
+/* footer */
+
+footer {
+    background: #303030;
+}
+
+.address {
+    gap: 23px !important;
+}
+
+.address a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer span {
+    color: #fff;
+}
+
+.foone {
+    padding: 33px 0;
+    display: flex;
+    gap: 23px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.centerinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 66px;
+}
+
+.fothre {
+    padding: 33px 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.fothre span {
+    padding-right: 9px;
+    padding-left: 9px;
+    border-right: 1px solid #fff;
+}
+
+.lastspan{
+    width: 100%;
+}
+
+.fotwo {
+    display: flex;
+    padding: 26px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footmenborsty {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.righttxt,
+.botfoot span:last-child {
+    border-right: unset !important;
+}
+
+.sociallink {
+    display: flex;
+    gap: 9px;
+    justify-content: flex-end;
+}
+
+header a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+    /* font-size: 12px; */
+    font-weight: 300;
+}
+
+.headtext span {
+    font-family: 'tstar-heavy';
+
+    color: #fff;
+    /* display: none; */
+    border-left: 5px solid red;
+    padding: 12px;
+}
+
+.headmiddle a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+
+.headmiddle a:hover {
+    text-decoration: none;
+    font-size: unset;
+    font-weight: unset;
+}
+
+#executive .herobikeimg,
+#performance .herobikeimg {
+    width: 213px;
+}
+
+#scooters .herobikeimg {
+    width: 320px;
+}
+
+.herobikeimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.herobikeimg p {
+    display: none;
+    margin-bottom: 0;
+}
+
+.herobikeimg img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.herobikeimg p {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    /* Adjust as necessary */
+}
+
+.herobikeimg:hover p {
+    display: block;
+}
+
+#media .abouttabcon {
+    width: 100%;
+    padding: 32px 0 32px 0;
+    background: lightgrey;
+    box-shadow: 0 19px 34px 0 rgba(0, 0, 0, 0);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%);
+    border: 0;
+}
+
+
+#media .abouttxt p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+
+#media .abouttxt p span a {
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    gap: 9px;
+}
+
+.abouttxt p {
+    margin-bottom: 0;
+}
+
+.mobcon {
+    display: none;
+}
+
+.deskcon {
+    display: block;
+}
+
+.con-text p {
+    color: #fff;
+    font-size: 56px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100% !important;
+    height: 116px;
+    margin-left: 120px;
+    max-width: 740px;
+}
+
+.con-text {
+    position: absolute;
+    top: 104px;
+}
+
+.ban {
+    position: relative;
+}
+
+.location-dropdown,
+.Vehicle-dropdwown {
+    -webkit-border-radius: 2px !important;
+    -webkit-padding-end: 20px !important;
+    -webkit-padding-start: 2px !important;
+    -webkit-user-select: none !important;
+    background-image: transparent !important;
+    background-repeat: no-repeat !important;
+    border: unset !important;
+    color: #fff !important;
+    font-size: inherit !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    background: transparent !important;
+    outline: unset !important;
+    border-bottom: 2px solid #fff !important;
+}
+
+option {
+    color: #000;
+}
+
+#location svg, #showroom svg{
+    height: 20px;
+    width: 20px;
+}
+
+#location p, #showroom p{
+    display: flex;
+    gap: 9px;
+}
+
+@media(max-width:1400px) {
+    .helpyou {
+        max-width: 1286px;
+        padding-right: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+
+@media(max-width:1100px) {
+
+    .helpyou {
+        margin-right: auto !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+@media(max-width:768px) {
+
+    .beaherop {
+        padding: 0 15px;
+    }
+
+    .tab, .tabbtm{
+        justify-content: unset;
+    }
+    .con-text {
+        top: 50px;
+    }
+
+    #media .abouttxt p span a {
+        font-size: 16px;
+    }
+
+    #media .abouttxt p {
+        flex-direction: column;
+    }
+
+    #showroom .abouttabcon {
+        gap: 19px;
+    }
+
+    footer a {
+        font-size: 16px;
+    }
+
+    .con-text p {
+        margin-top: 40px;
+        margin: auto;
+        align-items: center;
+        margin-left: 16px;
+
+        font-size: 32px !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        max-width: 768px;
+    }
+
+    .deskcon {
+        display: none;
+    }
+
+
+    .mobcon {
+        display: block;
+    }
+
+    .icon {
+        text-align: unset;
+        width: auto;
+        border-bottom: unset;
+        padding-bottom: 3px;
+    }
+
+    .floatwid {
+        gap: 6px;
+        padding: 6px 9px;
+    }
+
+    header a {
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        text-align: center;
+        padding: 9px;
+    }
+
+    .floatwid svg {
+        width: 19px;
+    }
+
+    .helphdng {
+        margin: 30px 0;
+    }
+
+    .headphone {
+        display: none;
+    }
+
+    .dual_image .image {
+        flex-direction: column;
+        gap: 13px;
+    }
+
+
+    .newlaunches {
+        background-image: none;
+        padding-top: 60px;
+    }
+
+    footer span {
+        font-size: 16px;
+    }
+
+    .foone,
+    .fothre {
+        justify-content: center;
+    }
+
+    .fothre {
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    .botfoot {
+        text-align: center;
+    }
+
+    .fotwo {
+        flex-direction: column;
+        gap: 14px;
+        text-align: center;
+    }
+
+    .sociallink {
+        justify-content: center;
+    }
+
+    .centerinfo {
+        gap: 23px;
+    }
+
+    .rpos {
+        position: unset;
+    }
+
+    #overlay {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 69px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .fa-navicon:before,
+    .fa-reorder:before,
+    .fa-bars:before {
+        background-color: #000;
+        color: red;
+    }
+
+    header {
+        padding: 6px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .scriptlay {
+        width: 100%;
+        display: flex;
+        gap:9px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .headfirst{
+        margin-bottom: 13px;
+    }
+
+    .headlogomob a {
+        border-bottom: unset;
+    }
+
+    .headmiddle {
+        width: 100%;
+        align-items: center;
+        /* padding-top: 9px;
+        margin-right: 0px; */
+        /*margin-bottom: 16px;*/
+        display: flex;
+        justify-content: center;
+    }
+    
+    .headlogomob{
+        width:100%;
+    }
+    
+ .headlogomob img{
+        width:30%;
+    }
+    
+    
+
+    .abouttxt span{
+        font-size: 13px;
+    }
+
+    iframe{
+        width: 330px;
+        margin-top: 36px;
+    }
+
+    #carrer .aboutbikeimg{
+        margin-top: 36px;
+    }
+
+    .headmiddle a{
+        border-bottom: unset;
+        padding: 0;
+        margin: 0;
+        gap:9px
+        
+    }
+    
+    .fa{
+        font-size:23px;
+    }
+
+    .headtext span {
+        display: none !important;
+    }
+
+    .headlogomob {
+        width: 100%;
+    }
+
+    .swiper {
+        height: 230px;
+    }
+
+    .machine {
+        height: 30px;
+    }
+
+    .motostyle {
+        overflow: scroll;
+    }
+
+    .motoinfo {
+        display: none;
+    }
+
+    .swiper-pagination-bullet::after {
+        width: 23px;
+    }
+
+    .swiper-pagination-bullet-active {
+        color: #fff;
+        font-size: 19px !important;
+    }
+
+    .swiper-pagination-bullet {
+        font-size: 13px;
+        margin: 13px 0;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    h2 {
+
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 15px;
+        margin-bottom: 9px;
+    }
+
+    h4 {
+        font-size: 11px;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    span {
+        font-size: 6px;
+    }
+
+    .spacetopbottom {
+        padding-bottom: 60px;
+    }
+
+    .help-main-box {
+        display: block;
+        display: flex;
+        justify-content: center;
+        gap: 23px;
+        overflow: scroll;
+        /* padding-left: 15px; */
+    }
+
+    .helpyou {
+        display: block;
+    }
+
+    .helpleft,
+    .helpright {
+        width: 100%;
+    }
+
+    .launchimgttl.d-flex {
+        flex-direction: column;
+        gap: 19px;
+    }
+
+    .abouttabcon {
+        flex-direction: column;
+    }
+
+    .abouttxt,
+    .aboutbikeimg {
+        width: 100%;
+    }
+
+    .dealcon {
+        flex-direction: column;
+    }
+
+    .dealership {
+        background: unset;
+        margin-bottom: 0;
+        padding-bottom: 60px;
+    }
+
+    /* form */
+
+    .herofield {
+        margin-bottom: 60px;
+    }
+
+    /* dealership */
+
+    .dealbike,
+    .dealnumber {
+        width: 100%;
+        padding-top: 23px;
+        justify-content: flex-start;
+    }
+
+    .dealbike {
+        padding: unset;
+    }
+
+    .ttltxt h3 {
+        font-size: 28px;
+        margin-bottom: 26px;
+    }
+
+    .stylmile {
+        font-size: 22px;
+    }
+
+    .rolltxt {
+        font-size: 8px;
+    }
+
+    .gridlayout {
+        padding: unset;
+        gap: 16px;
+    }
+
+    .rollnumber {
+        padding-right: 16px;
+    }
+
+    .gridbtm {
+        gap: 16px;
+    }
+
+    .gridtop,
+    .gridbtm {
+        gap: 23px;
+    }
+
+    .ttltxt h1 {
+        color: red;
+        font-size: 53px;
+    }
+
+    /* explore */
+
+    .tabtexthero p {
+        font-size: 16px !important;
+    }
+
+    .tab button,
+    .tabbtm button {
+        font-size: 18px;
+    }
+
+    .tabcontent,
+    .tabcontentbtm {
+        padding-top: 39px;
+    }
+
+    .biketab {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tileteaser {
+        width: 100%;
+    }
+
+    .help-box p {
+        font-size: 13px !important;
+    }
+
+    .help-icon-box {
+        height: auto;
+        box-shadow: 0 3px 3px #dddcdc;
+    }
+
+    .help-main-box::-webkit-scrollbar {
+        display: none;
+    }
+
+    .help-main-box {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .helpyou h2 {
+        MARGIN-BOTTOM: 19px;
+        text-align: center;
+    }
+
+    .help-box {
+        margin-bottom: unset;    
+        align-items: center;
+    }
+
+    .firsthero .swiper {
+        height: 179px;
+    }
+
+    #executive .herobikeimg, #performance .herobikeimg, #scooters .herobikeimg{
+        width: 153px;
+    }
+
+    .scootransl{   
+        transform: scaleX(-1);
+    }
+    
+    .headlogomob span {
+        font-size: 13px;
+        display: block;
+        width:fit-content;
+        border-left: 2px solid red;
+        padding-left: 9px;
+    }
+
+    .motoimg {
+        width: 76px;
+        position: absolute;
+        top: 431px;
+        right: -3px;
+    }
+
+    .inrspc {
+        padding: 33px 0;
+    }
+
+    /* tab */
+    .tab,
+    .tabbtm {
+        overflow: scroll;
+    }
+}
